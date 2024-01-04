@@ -1,0 +1,42 @@
+*{
+	box-sizing: border-box;
+}
+
+.center{
+	dispaly:flex;
+	flex-direction:column;
+	border-radius:10px;
+	border:1px solid gray;
+	display: flex;
+	width:50%;
+    	justify-content: center;
+    	align-items: center;
+}
+
+.frtno{
+	display:flex;
+	align-items: center;
+    	justify-content: space-around;
+}
+
+.sedno{
+	display:flex;
+	align-items: center;
+    	justify-content: space-around;
+}
+
+.third{
+	display:flex;
+	align-items: center;
+    	justify-content: space-around;
+}
+
+.answ{
+	display:flex;
+	align-items: center;
+    	justify-content: space-around;
+}
+
+.frt{
+	height:fit-content;
+}

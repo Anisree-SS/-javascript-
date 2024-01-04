@@ -1,0 +1,13 @@
+*{
+	box-sizing: border-box;
+}
+
+.center{
+	border-radius:10px;
+	border:1px solid gray;
+	width:150px;
+	height: 50px;
+	display: flex;
+    	justify-content: center;
+    	align-items: center;
+}
