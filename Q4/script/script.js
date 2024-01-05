@@ -5,8 +5,8 @@ function add()
 	var n3=parseInt(document.getElementById("num3").value);
 	var sum= n1+n2+n3;
 	var avg=sum/3;
-	document.getElementById("sum").value = sum;
-	document.getElementById("avg").value = avg;
+	document.getElementById("ans1").value = sum;
+	document.getElementById("ans2").value = avg;
 }
 
 		
