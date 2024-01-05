@@ -1,1 +1,4 @@
-document.write("Hello World");
+function add()
+{
+	document.getElementById("demo").innerHTML = "Hello World";
+}
