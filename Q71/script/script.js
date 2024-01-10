@@ -2,7 +2,7 @@ function find()
 {
 	var text=document.getElementById("str").value;
 	var n=text.length;
-	var text2;
+	var text2="";
 	var len=new Array();
         for(var i = 0; i < text.length; i++) 
 	{
