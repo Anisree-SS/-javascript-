@@ -1,26 +1,24 @@
 function find()
 {
-	
+	var occ={};
 	var txt=document.getElementById("str").value;
 	var n=txt.length;
-	var text=txt.split("");
-	for(var i=0;i<n;i++)
-	{
-		var count=0;
-		for(var j=0;j<n;j++)
+	var count = {};
+            for (var i = 0; i < n; i++) {
+                var char = txt[i];
+                if (count[char] === undefined) {
+                    count[char] = 1;
+                } 
+		else 
 		{
-			if(txt[i]==text[j])
-			{
-				count++;
-				if(txt[i++].includes(text[i])
-					delete txt[i];
-				
-			}
-		}
-		document.write(text1[i]+"="+count+"\t");
-	}
-document.write(text1);
+                   count[char]++;
+                }
+            }
+            for (var char in count) {
+                document.write(char +" =  "+count[char]+"\t");
+            }
 }
+	
 
 	
 	
