@@ -13,15 +13,12 @@ function find()
 		var pos=txt.indexOf(temp);
 		var m=txt.indexOf(temp1);
 		var t=-1;
-		for(var i=pos;i<=m-1;i++)
-			if((txt[i]==text[++t]))
+		for(var i=pos;i<m;i++){
+			if (!text.includes(txt[i]))
 			{	
-
-				continue;
+				document.write(txt[i]+"\t");	
 			}	
-			else{
-				document.write(txt[i]+"\t");
-			}
+		}
 	}	
 }
 
