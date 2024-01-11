@@ -1,21 +1,24 @@
-function countNotes(amount) {
-    const denominations = [2000, 500, 200, 100, 50, 20, 10, 5, 2, 1];
-    const notesCount = {};
+function find() 
+{
+	var sum=0;
+	var amount=parseInt(document.getElementById("amt").value);
+	const notes = [2000, 500, 200, 100, 50, 20, 10, 5, 2, 1];
+	var n=notes.length;
+    	const noCount=[];
+    	for (var i=0;i<n;i++) 
+	{
+        	var count = parseInt(amount/notes[i]);
+        	if (count>0)
+		{
+            		noCount[i] = count;
+            		amount=amount%notes[i];
+        	}
+		else
+			noCount[i]=0;
+    	}
+	for(var j=0;j<noCount.length;j++) 
+    		sum=sum+noCount[j];
 
-    for (const denomination of denominations) {
-        const count = Math.floor(amount / denomination);
-
-        if (count > 0) {
-            notesCount[denomination] = count;
-            amount %= denomination;
-        }
-    }
-
-    return notesCount;
+    document.getElementById("demo").innerHTML="No: of notes : "+sum;
 }
 
-const amount = 2456; // Replace this with the desired amount
-const notesResult = countNotes(amount);
-
-console.log("Amount:", amount);
-console.log("Notes Count:", notesResult);
