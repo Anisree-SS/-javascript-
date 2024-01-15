@@ -5,7 +5,7 @@ function find()
 	var num3=document.getElementById("mark3").value;
 	var num4=document.getElementById("mark4").value;
 	var num5=document.getElementById("mark5").value;
-	var no=/^[A-Z@~`!@#$%^&*()_=+\\\\';:\"\\/?>.<,-]*$/i;
+	var no=/^[A-z@~`!@#$%^&*()_=+\\\\';:\"\\/?>.<,-]*$/i;
 	cal=1;
 	cal=cal+num1.match(no)+num2.match(no)+num3.match(no)+num4.match(no)+num5.match(no);
 	if((num1.charAt(0)==" ")||(cal!="1")||(num1=="")||(num2.charAt(0)==" ")||(num2=="")||(num3.charAt(0)==" ")||(num3=="")||(num4.charAt(0)==" ")||(num4=="")||(num5.charAt(0)==" ")||(num5==""))
