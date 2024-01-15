@@ -1,0 +1,41 @@
+*{
+	box-sizing: border-box;
+}
+
+.center{
+	dispaly:flex;
+	flex-direction:column;
+	display: flex;
+    	justify-content: center;
+    	align-items: center;
+}
+
+.form{
+	border-radius:10px;
+	border:1px solid gray;
+	width:30%;
+	margin-left:25%;
+	background: aliceblue;
+}
+
+.frtno{
+	display:flex;
+	align-items: center;
+    	justify-content: space-around;
+}
+
+.sedno{
+	display:flex;
+	align-items: center;
+    	justify-content: space-around;
+}
+
+.answ{
+	display:flex;
+	align-items: center;
+    	justify-content: space-around;
+}
+
+.frt{
+	height:fit-content;
+}
