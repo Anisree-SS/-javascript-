@@ -1,0 +1,51 @@
+*{
+	box-sizing: border-box;
+	margin:2px;
+}
+
+.center{
+	dispaly:flex;
+	flex-direction:column;
+    	justify-content: center;
+    	align-items: center;
+}
+
+.form{
+	border-radius:10px;
+	border:1px solid gray;
+	width:30%;
+	margin-left:25%;
+	background: aliceblue;
+}
+
+.frtno{
+	display:flex;
+	align-items: center;
+	flex-direction: column;
+}
+
+.sedno{
+	display:flex;
+	align-items: center;
+}
+
+.btn{
+	display:flex;
+	justify-content: center;
+	padding-top: 15px;
+}
+
+.answ{
+	display:flex;
+	align-items: center;
+    	gap:5px;
+}
+
+.frt{
+	height:fit-content;
+}
+
+#answ1 {
+	display:none ;
+	flex-direction:column;
+}

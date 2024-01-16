@@ -1,0 +1,25 @@
+*{
+	box-sizing: border-box;
+}
+
+.center{
+	height: 180px;
+    	border-radius: 10px;
+   	border: 1px solid gray;
+    	width: 293px;
+   	display: flex;
+   	flex-direction: column;
+    	justify-content: center;
+    	align-items: center;
+    	margin-left: 38%;
+	background-color: lightpink;
+	
+}
+
+#demo{
+		color:blue;
+		font-size:34px;
+		font-style:
+		align-items:center;
+		font-style: italic;
+}
