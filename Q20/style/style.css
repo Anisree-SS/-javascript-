@@ -6,42 +6,38 @@
 	dispaly:flex;
 	flex-direction:column;
 	display: flex;
-    	justify-content: center;
     	align-items: center;
+	gap:20px;
+	width:25%;
+	border:1px solid #000001;
+	margin-left: 33%;
+	padding:1%;
 }
 
-.form{
-	border-radius:10px;
-	border:1px solid gray;
-	width:30%;
-	margin-left:25%;
-	background: aliceblue;
+.centerTop{
+	border:2px solid #000000;
 }
 
-.frtno{
+.centerBottom{
 	display:flex;
-	align-items: center;
-    	gap:5px;
+	gap:20px;
 }
 
-.sedno{
+.centerBottomLeft,.centerBottomMid,.centerBottomRight,.centerBottomLast{
 	display:flex;
-	align-items: center;
-    	gap:5px;
+	flex-direction: column;
+    	gap:10px;
+	
 }
 
-.btn{
-	display:flex;
-	//justify-content: space-between;
-	gap:10px;
+.digit{
+	border:1px solid #000000;
+	background:#ffffff;
+	background-color: aliceblue;
 }
 
-.answ{
-	display:flex;
-	align-items: center;
-    	gap:5px;
+input{
+	border:0px;
+	background: transparent;
 }
 
-.frt{
-	height:fit-content;
-}
