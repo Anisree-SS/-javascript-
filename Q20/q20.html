@@ -7,37 +7,41 @@
    </head>
    <body>
       <form name="calculator">
-	<div class="center">
-		<div class="centerTop">
-			<input type="text" id="number">
-		</div>
-		<div class="centerBottom">
-			<div class="centerBottomLeft">
-				<div class="digit"><input type="button" id="n7" value="7" onclick="display('7')"></div>
-				<div class="digit"><input type="button" id="n4" value="4" onclick="display('4')"></div>
-				<div class="digit"><input type="button" id="n1" value="1" onclick="display('1')"></div>
-				<div class="digit"><input type="button" id="clear" value="c" onclick="reset()"></div>
-			</div>
-			<div class="centerBottomMid">
-				<div class="digit"><input type="button" id="n8" value="8" onclick="display('8')"></div>
-				<div class="digit"><input type="button" id="n5" value="5" onclick="display('5')"></div>
-				<div class="digit"><input type="button" id="n2" value="2" onclick="display('2')"></div>
-				<div class="digit"><input type="button" id="n0" value="0" onclick="display('0')"></div>
-			</div>
-			<div class="centerBottomRight">
-				<div class="digit"><input type="button" id="n9" value="9" onclick="display('9')"></div>
-				<div class="digit"><input type="button" id="n6" value="6" onclick="display('6')"></div>
-				<div class="digit"><input type="button" id="n3" value="3" onclick="display('3')"></div>
-				<div class="digit"><input type="button" id="opdiv" value="/" onclick="display('/')"></div>
-			</div>
-			<div class="centerBottomLast">
-				<div class="digit"><input type="button" id="opmul" value="*" onclick="display('*')"></div>
-				<div class="digit"><input type="button" id="opsub" value="-" onclick="display('-')"></div>
-				<div class="digit"><input type="button" id="opadd" value="+" onclick="display('+')"></div>
-				<div class="digit"><input type="button" id="opeq" value="=" onclick="calculate()"></div>
-			</div>
-		</div>
-	</div>
+         <div class="center">
+            <div class="centerTop">
+               <input type="text" id="number" readonly>
+            </div>
+            <div class="centerBottom">
+               <div class="centerBottomLeft">
+                  <div class="digit"><input type="button" id="number7" value="7" onclick="display('7')"></div>
+                  <div class="digit"><input type="button" id="number4" value="4" onclick="display('4')"></div>
+                  <div class="digit"><input type="button" id="number1" value="1" onclick="display('1')"></div>
+                  <div class="digit"><input type="button" id="dot" value="." onclick="display('.')"></div>
+               </div>
+               <div class="centerBottomMid">
+                  <div class="digit"><input type="button" id="number8" value="8" onclick="display('8')"></div>
+                  <div class="digit"><input type="button" id="number5" value="5" onclick="display('5')"></div>
+                  <div class="digit"><input type="button" id="number2" value="2" onclick="display('2')"></div>
+                  <div class="digit"><input type="button" id="number0" value="0" onclick="display('0')"></div>
+               </div>
+               <div class="centerBottomRight">
+                  <div class="digit"><input type="button" id="number9" value="9" onclick="display('9')"></div>
+                  <div class="digit"><input type="button" id="number6" value="6" onclick="display('6')"></div>
+                  <div class="digit"><input type="button" id="number3" value="3" onclick="display('3')"></div>
+                  <div class="digit"><input type="button" id="clear" value="c" onclick="reset()"></div>
+               </div>
+               <div class="centerBottomLast">
+                  <div class="digit"><input type="button" id="mul" value="*" onclick="display('*')"></div>
+                  <div class="digit"><input type="button" id="sub" value="-" onclick="display('-')"></div>
+                  <div class="digit"><input type="button" id="add" value="+" onclick="display('+')"></div>
+                  <div class="digit"><input type="button" id="division" value="/" onclick="display('/')"></div>
+               </div>
+               <div class="centerBottomEnd">
+                  <div class="digit"><input type="button" id="delete" value="del" onclick="deleteData()"></div>
+                  <div class="digit"><input type="button" id="equal" value="=" onclick="calculate()"></div>
+               </div>
+            </div>
+         </div>
       </form>
    </body>
 </html>
